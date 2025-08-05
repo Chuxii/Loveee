@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<title>Pentru sufletul meu, Razvii ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #f4c2c2, #d3d3d3);
+    color: #333;
+    overflow-x: hidden;
+  }
+  header {
+    background-color: #f4c2c2cc;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+  }
+  .message {
+    background: #fff0f5cc;
+    border-left: 6px solid #d87093;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    position: relative;
+  }
+  audio {
+    margin-top: 2rem;
+    width: 100%;
+    outline: none;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  #loveMsg {
+    font-size: 1.8rem;
+    color: #d87093;
+    text-align: center;
+    margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 3s;
+  }
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Inimioare plutitoare */
+  .heart {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: red;
+    transform: rotate(45deg);
+    animation: float 10s linear infinite;
+    opacity: 0.6;
+  }
+
+  .heart::before,
+  .heart::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+  }
+
+  .heart::before {
+    top: -10px;
+    left: 0;
+  }
+
+  .heart::after {
+    left: -10px;
+    top: 0;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(45deg);
+    }
+    100% {
+      transform: translateY(-100vh) rotate(45deg);
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Pentru sufletul meu, Razvii 💕</h1>
+  <p>Un colț de internet doar pentru tine, creat cu toată dragostea mea</p>
+</header>
+
+<!-- Inimioare animate -->
+<div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+<div class="heart" style="left: 30%; animation-delay: 2s;"></div>
+<div class="heart" style="left: 50%; animation-delay: 4s;"></div>
+<div class="heart" style="left: 70%; animation-delay: 1s;"></div>
+<div class="heart" style="left: 90%; animation-delay: 3s;"></div>
+
+<div class="container">
+  <div class="message">
+    <h2>Te iubesc pentru că...</h2>
+    <p>...m-ai învățat cum e să iubești fără teamă. Cum e să ai un partener care te respectă, te ascultă, te alintă și te face să râzi din senin. Ești combinația perfectă între romantic și serios, tandru și timid, glumeț dar și matur. Adică... fix ce n-am știut că am nevoie. ❤️</p>
+  </div>
+
+  <div class="message">
+    <h2>Ce însemni pentru mine</h2>
+    <p>Ești omul care mi-a schimbat viața într-un mod pe care nici nu-l pot explica. Când îți aud vocea, parcă ziua devine mai senină. Când îmi spui că mă iubești, mă simt întreagă. Când îmi lipsești... of, atunci îmi dau seama cât de adânc te-am lăsat în sufletul meu.</p>
+  </div>
+
+  <div class="message">
+    <h2>Planuri de viitor 😍</h2>
+    <p>Un cățel sau o pisică. O seară pe canapea cu popcorn și un film prost, dar tu lângă mine. O excursie spontană. O casă cu miros de cafea. Râsete. Discuții târzii. Poate o viață întreagă. Cine știe? Eu sper să fie totul cu tine.</p>
+  </div>
+
+  <div class="message">
+    <h2>Melodia noastră 🎶</h2>
+    <button onclick="document.getElementById('bgMusic').play()" style="background-color:#d87093;color:white;padding:10px 20px;border:none;border-radius:25px;cursor:pointer;font-size:1rem;margin-bottom:1rem;">🎶 Apasă aici să pornești melodia noastră</button>
+    <p>O ascult și mă gândesc la tine. La noi. La cum ar fi dacă am fi acum împreună...</p>
+    <audio id="bgMusic" loop style="display:none;">
+      <source src="https://dl.dropboxusercontent.com/scl/fi/r9j67dxdsfr3jsbn5jl1q/Major-Lazer-Be-Together.mp3?rlkey=0vmpvm1h7tw1yphh9ynwz1f1r&dl=0" type="audio/mpeg">
+      Browserul tău nu suportă redarea audio.
+    </audio>
+  </div>
+
+  <div id="loveMsg">Te iubesc, Razvii! 💖</div>
+
+  <div class="message">
+    <h2>PS:</h2>
+    <p>Te iubesc până la lună și înapoi. Și nu glumesc. Sau poate glumesc puțin... dar te iubesc oricum. 🥰</p>
+  </div>
+</div>
+
+<div class="footer">
+  Creat cu dragoste de <strong>Ruxi</strong> • ❤️
+</div>
+
+<script>
+  // Pornirea melodiei la click (dacă vrei să controlezi și pauză, putem extinde)
+  const button = document.querySelector("button");
+  button?.addEventListener("click", () => {
+    const audio = document.getElementById("bgMusic");
+    if (audio) audio.play();
+  });
+</script>
+</body>
+
+</html>
